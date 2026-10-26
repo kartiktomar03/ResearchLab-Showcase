@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#f6f2e8" name="theme-color"/>
+  <meta content="ResearchLab — an AI-powered research paper analysis and comparison project built with Flask, Qdrant and Groq. View the walkthrough and run it locally." name="description"/>
+  <title>
+   ResearchLab — Read Less. Understand More.
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <link href="./styles.css" rel="stylesheet"/>
+  <script defer="" src="./script.js">
+  </script>
+ </head>
+ <body>
+  <a class="skip" href="#main">
+   Skip to content
+  </a>
+  <div aria-hidden="true" class="grain">
+  </div>
+  <div class="ticker">
+   <div class="ticker-inner">
+    <span>
+     RESEARCH, WITHOUT THE RABBIT HOLE
+    </span>
+    <span aria-hidden="true">
+     ✳
+    </span>
+    <span>
+     RAG-POWERED PAPER ANALYSIS
+    </span>
+    <span aria-hidden="true">
+     ✳
+    </span>
+    <span>
+     BUILT TO EXPLORE IDEAS
+    </span>
+    <span aria-hidden="true">
+     ✳
+    </span>
+    <span>
+     RESEARCH, WITHOUT THE RABBIT HOLE
+    </span>
+   </div>
+  </div>
+  <header class="nav wrap">
+   <a aria-label="ResearchLab home" class="brand" href="#top">
+    <span class="brand-mark">
+     R
+     <span class="mark-dot">
+      .
+     </span>
+    </span>
+    <span class="brand-word">
+     RESEARCH
+     <span>
+      LAB
+     </span>
+     <small>
+      THE RESEARCH SIDEKICK
+     </small>
+    </span>
+   </a>
+   <nav aria-label="Main navigation" class="nav-links">
+    <a href="#features">
+     FEATURES
+    </a>
+    <a href="#showcase">
+     SHOWCASE
+    </a>
+    <a href="#architecture">
+     HOW IT WORKS
+    </a>
+    <a href="#setup">
+     SETUP
+    </a>
+   </nav>
+   <a class="button nav-github" href="https://github.com/kartiktomar03/Research-Paper-Assistant" rel="noopener noreferrer" target="_blank">
+    VIEW ON GITHUB
+    <span>
+     ↗
+    </span>
+   </a>
+   <button aria-expanded="false" aria-label="Toggle navigation" class="mobile-menu" type="button">
+    ☰
+   </button>
+  </header>
+  <main id="main">
+   <section class="hero wrap" id="top">
+    <div class="hero-copy">
+     <div class="eyebrow">
+      <span class="spark">
+       ✳
+      </span>
+      YOUR AI RESEARCH COMPANION
+      <span class="eyebrow-num">
+       / 001
+      </span>
+     </div>
+     <h1>
+      READ LESS.
+      <br/>
+      UNDERSTAND
+      <span class="highlight">
+       MORE
+       <span class="period">
+        .
+       </span>
+      </span>
+     </h1>
+     <p class="hero-desc">
+      Turn dense academic papers into answers you can actually use. Extract insights, explore visuals, and compare research across documents — all in one workspace.
+     </p>
+     <div class="hero-actions">
+      <a class="button button-yellow" href="#showcase">
+       EXPLORE PROJECT
+       <span>
+        ↘
+       </span>
+      </a>
+      <a class="button button-light" href="https://github.com/kartiktomar03/Research-Paper-Assistant" rel="noopener noreferrer" target="_blank">
+       SOURCE CODE
+       <span>
+        ↗
+       </span>
+      </a>
+     </div>
+     <div class="hero-foot">
+      <span class="pulse">
+      </span>
+      OPEN SOURCE PROJECT
+      <span class="slash">
+       /
+      </span>
+      RUN LOCALLY OR WITH QDRANT CLOUD
+     </div>
+    </div>
+    <div aria-label="Illustration of research documents becoming AI insights" class="hero-art">
+     <div class="art-top">
+      <span>
+       RESEARCH / REIMAGINED
+      </span>
+      <span>
+       ✳
+      </span>
+     </div>
+     <div class="paper-stack">
+      <div class="paper-back">
+      </div>
+      <div class="paper-front">
+       <div class="paper-meta">
+        <span>
+         PAPER_01.PDF
+        </span>
+        <span>
+         ● ● ●
+        </span>
+       </div>
+       <div class="paper-line wide">
+       </div>
+       <div class="paper-line medium">
+       </div>
+       <div class="paper-line short">
+       </div>
+       <div class="visual-row">
+        <div class="chart-bars">
+         <i>
+         </i>
+         <i>
+         </i>
+         <i>
+         </i>
+         <i>
+         </i>
+         <i>
+         </i>
+        </div>
+        <div class="visual-copy">
+         <span>
+         </span>
+         <span>
+         </span>
+         <span>
+         </span>
+        </div>
+       </div>
+       <div class="paper-line wide">
+       </div>
+       <div class="paper-line medium">
+       </div>
+      </div>
+      <div class="ai-chip">
+       ✦
+       <span>
+        INSIGHTS FOUND
+       </span>
+      </div>
+     </div>
+     <div class="art-bottom">
+      <span>
+       DOCUMENT → CONTEXT → ANSWERS
+      </span>
+      <span class="rounded-star">
+       ✳
+      </span>
+     </div>
+    </div>
+   </section>
+   <div class="marquee">
+    <div class="marquee-track">
+     <span>
+      PDF INTELLIGENCE
+     </span>
+     ✳
+     <span>
+      MULTI-PAPER RAG
+     </span>
+     ✳
+     <span>
+      SEMANTIC SEARCH
+     </span>
+     ✳
+     <span>
+      GROQ-POWERED Q&amp;A
+     </span>
+     ✳
+     <span>
+      LIVE STREAMING
+     </span>
+     ✳
+     <span>
+      PDF INTELLIGENCE
+     </span>
+     ✳
+     <span>
+      MULTI-PAPER RAG
+     </span>
+     ✳
+    </div>
+   </div>
+   <section class="section wrap" id="features">
+    <div class="section-head">
+     <div>
+      <div class="kicker">
+       01 / WHAT IT DOES
+      </div>
+      <h2>
+       A SMARTER WAY TO
+       <span class="underline-swish">
+        RESEARCH.
+       </span>
+      </h2>
+     </div>
+     <p>
+      From a single PDF to a comparative literature review. The tedious parts, simplified.
+     </p>
+    </div>
+    <div class="features-grid">
+     <article class="feature feature-yellow">
+      <div class="feature-top">
+       <span>
+        01 / INGEST
+       </span>
+       <span class="feature-icon">
+        ⇧
+       </span>
+      </div>
+      <h3>
+       DROP YOUR
+       <br/>
+       PAPERS.
+      </h3>
+      <p>
+       Upload multiple research PDFs and extract text, tables, figures, headings and paper metadata.
+      </p>
+      <div class="feature-bottom">
+       MULTI-DOCUMENT UPLOAD
+       <span>
+        ↗
+       </span>
+      </div>
+     </article>
+     <article class="feature feature-blue">
+      <div class="feature-top">
+       <span>
+        02 / UNDERSTAND
+       </span>
+       <span class="feature-icon">
+        ✳
+       </span>
+      </div>
+      <h3>
+       ASK.
+       <br/>
+       DISCOVER.
+      </h3>
+      <p>
+       Ask natural-language questions and get streaming answers grounded in retrieved document passages.
+      </p>
+      <div class="feature-bottom">
+       DOCUMENT Q&amp;A
+       <span>
+        ↗
+       </span>
+      </div>
+     </article>
+     <article class="feature feature-peach">
+      <div class="feature-top">
+       <span>
+        03 / COMPARE
+       </span>
+       <span class="feature-icon">
+        ⇄
+       </span>
+      </div>
+      <h3>
+       FIND THE
+       <br/>
+       DIFFERENCE.
+      </h3>
+      <p>
+       Compare methods, findings, datasets and limitations across selected papers with source references.
+      </p>
+      <div class="feature-bottom">
+       CROSS-PAPER ANALYSIS
+       <span>
+        ↗
+       </span>
+      </div>
+     </article>
+     <article class="feature feature-green">
+      <div class="feature-top">
+       <span>
+        04 / EXPLORE
+       </span>
+       <span class="feature-icon">
+        ▦
+       </span>
+      </div>
+      <h3>
+       SEE THE
+       <br/>
+       DETAILS.
+      </h3>
+      <p>
+       Inspect extracted tables and figure previews, plus section-wise summaries and document citations.
+      </p>
+      <div class="feature-bottom">
+       TABLES + FIGURES
+       <span>
+        ↗
+       </span>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section class="section showcase-section" id="showcase">
+    <div class="wrap">
+     <div class="section-head">
+      <div>
+       <div class="kicker">
+        02 / INSIDE RESEARCHLAB
+       </div>
+       <h2>
+        THE WORKSPACE,
+        <span class="underline-swish">
+         IN ACTION.
+        </span>
+       </h2>
+      </div>
+      <p>
+       A glimpse of the actual application — the hosted showcase is not the running AI backend.
+      </p>
+     </div>
+     <div class="screen-frame">
+      <div class="window-chrome">
+       <div class="window-dots">
+        <i>
+        </i>
+        <i>
+        </i>
+        <i>
+        </i>
+       </div>
+       <span>
+        RESEARCHLAB / APPLICATION PREVIEW
+       </span>
+       <span class="chrome-corner">
+        ↗
+       </span>
+      </div>
+      <div aria-label="Four research application screenshot placeholders" class="workspace-shots">
+       <figure class="workspace-shot">
+        <img src="./assets/screenshot-1.png" alt="Tables & Figures screenshot" loading="lazy">
+        <figcaption>
+         SLOT 01 / UPLOAD &amp; INDEX
+        </figcaption>
+        <!-- Replace .workspace-placeholder with <img src="./assets/screenshot-1.png" alt="Upload & Index screenshot" loading="lazy"> once ready. -->
+       </figure>
+       <figure class="workspace-shot">
+        <img src="./assets/screenshot-2.png" alt="Tables & Figures screenshot" loading="lazy">
+        <figcaption>
+         SLOT 02 / SINGLE PAPER Q&amp;A
+        </figcaption>
+        <!-- Replace .workspace-placeholder with <img src="./assets/screenshot-2.png" alt="Single Paper Q&A screenshot" loading="lazy"> once ready. -->
+       </figure>
+       <figure class="workspace-shot">
+        <img src="./assets/screenshot-3.png" alt="Tables & Figures screenshot" loading="lazy">
+        <figcaption>
+         SLOT 03 / TABLES &amp; FIGURES
+        </figcaption>
+        <!-- Replace .workspace-placeholder with <img src="./assets/screenshot-3.png" alt="Tables & Figures screenshot" loading="lazy"> once ready. -->
+       </figure>
+       <figure class="workspace-shot">
+        <img src="./assets/screenshot-4.png" alt="Tables & Figures screenshot" loading="lazy">
+        <figcaption>
+         SLOT 04 / COMPARE PAPERS
+        </figcaption>
+        <!-- Replace .workspace-placeholder with <img src="./assets/screenshot-4.png" alt="Compare Papers screenshot" loading="lazy"> once ready. -->
+       </figure>
+      </div>
+      <div class="screen-caption">
+       <span>
+        FOUR WORKSPACE PREVIEW SLOTS
+       </span>
+       <span>
+        LOCAL &amp; CLOUD BACKEND SUPPORTED
+       </span>
+      </div>
+     </div>
+     <div class="showcase-stats">
+      <div>
+       <strong>
+        05
+       </strong>
+       <span>
+        PDFs PER UPLOAD
+       </span>
+      </div>
+      <div>
+       <strong>
+        02
+       </strong>
+       <span>
+        WORKSPACE MODES
+       </span>
+      </div>
+      <div>
+       <strong>
+        RAG
+       </strong>
+       <span>
+        EVIDENCE-BASED RETRIEVAL
+       </span>
+      </div>
+      <div>
+       <strong>
+        LIVE
+       </strong>
+       <span>
+        STREAMED AI RESPONSES
+       </span>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section wrap" id="demo">
+    <div class="demo-layout">
+     <div class="demo-copy">
+      <div class="kicker">
+       03 / SEE THE FLOW
+      </div>
+      <h2>
+       WATCH THE
+       <br/>
+       <span class="highlight small-highlight">
+        WALKTHROUGH.
+       </span>
+      </h2>
+      <p>
+       See how a research paper moves from upload to extraction, streaming answers and cross-paper comparison.
+      </p>
+      <div class="demo-list">
+       <span>
+        <b>
+         01
+        </b>
+        Upload and index PDFs
+       </span>
+       <span>
+        <b>
+         02
+        </b>
+        Explore summaries and figures
+       </span>
+       <span>
+        <b>
+         03
+        </b>
+        Compare findings across papers
+       </span>
+      </div>
+      <a class="text-link" href="https://github.com/kartiktomar03/Research-Paper-Assistant" rel="noopener noreferrer" target="_blank">
+       EXPLORE THE CODE ↗
+      </a>
+     </div>
+     <div class="video-frame" id="videoContainer">
+      <div class="video-top">
+       <span>
+        RESEARCHLAB.DEMO
+       </span>
+       <span>
+        ● REC PREVIEW
+       </span>
+      </div>
+      <div class="video-graphic">
+       <div class="vg-card">
+        <span>
+         PDF
+        </span>
+        <i>
+        </i>
+        <i>
+        </i>
+        <i>
+        </i>
+       </div>
+       <span class="vg-arrow">
+        →
+       </span>
+       <div class="vg-card vg-ai">
+        <span>
+         AI
+        </span>
+        <i>
+        </i>
+        <i>
+        </i>
+        <i>
+        </i>
+       </div>
+      </div>
+      <div class="video-play">
+       <span aria-hidden="true">
+        ▶
+       </span>
+      </div>
+      <div class="video-bottom">
+       <strong>
+        DEMO RECORDING COMING SOON
+       </strong>
+       <span>
+        Add
+        <code>
+         assets/demo.mp4
+        </code>
+        to enable playback
+       </span>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="architecture-section section" id="architecture">
+    <div class="wrap">
+     <div class="section-head">
+      <div>
+       <div class="kicker">
+        04 / UNDER THE HOOD
+       </div>
+       <h2>
+        HOW THE
+        <span class="underline-swish">
+         MAGIC WORKS.
+        </span>
+       </h2>
+      </div>
+      <p>
+       A modular Retrieval-Augmented Generation pipeline built in Python and Flask.
+      </p>
+     </div>
+     <div class="pipeline">
+      <div class="pipeline-node">
+       <div class="node-icon">
+        ▤
+       </div>
+       <strong>
+        PDF INPUT
+       </strong>
+       <small>
+        DOCUMENTS
+       </small>
+      </div>
+      <div class="connector">
+       →
+      </div>
+      <div class="pipeline-node">
+       <div class="node-icon">
+        ⌘
+       </div>
+       <strong>
+        EXTRACTION
+       </strong>
+       <small>
+        TEXT / TABLES / FIGURES
+       </small>
+      </div>
+      <div class="connector">
+       →
+      </div>
+      <div class="pipeline-node">
+       <div class="node-icon">
+        ▦
+       </div>
+       <strong>
+        EMBEDDINGS
+       </strong>
+       <small>
+        FASTEMBED / ST
+       </small>
+      </div>
+      <div class="connector">
+       →
+      </div>
+      <div class="pipeline-node node-emphasis">
+       <div class="node-icon">
+        ◎
+       </div>
+       <strong>
+        QDRANT
+       </strong>
+       <small>
+        VECTOR SEARCH
+       </small>
+      </div>
+      <div class="connector">
+       →
+      </div>
+      <div class="pipeline-node">
+       <div class="node-icon">
+        ✳
+       </div>
+       <strong>
+        GROQ LLM
+       </strong>
+       <small>
+        STREAMED ANSWERS
+       </small>
+      </div>
+     </div>
+     <div class="tech-tags">
+      <span>
+       PYTHON
+      </span>
+      <span>
+       FLASK
+      </span>
+      <span>
+       QDRANT
+      </span>
+      <span>
+       GROQ API
+      </span>
+      <span>
+       PYMUPDF
+      </span>
+      <span>
+       PDFPLUMBER
+      </span>
+      <span>
+       JAVASCRIPT
+      </span>
+      <span>
+       DOCKER
+      </span>
+     </div>
+    </div>
+   </section>
+   <section class="section wrap" id="setup">
+    <div class="section-head">
+     <div>
+      <div class="kicker">
+       05 / MAKE IT YOURS
+      </div>
+      <h2>
+       RUN IT ON
+       <span class="underline-swish">
+        YOUR MACHINE.
+       </span>
+      </h2>
+     </div>
+     <p>
+      No paid hosting required to try the project. Clone the repository and use local Qdrant or your own cloud cluster.
+     </p>
+    </div>
+    <div class="setup-grid">
+     <div class="setup-info">
+      <div class="setup-step">
+       <span>
+        01
+       </span>
+       <div>
+        <strong>
+         CLONE THE REPOSITORY
+        </strong>
+        <p>
+         Get the full Flask backend and frontend from GitHub.
+        </p>
+       </div>
+      </div>
+      <div class="setup-step">
+       <span>
+        02
+       </span>
+       <div>
+        <strong>
+         INSTALL DEPENDENCIES
+        </strong>
+        <p>
+         Create a Python environment and install the requirements.
+        </p>
+       </div>
+      </div>
+      <div class="setup-step">
+       <span>
+        03
+       </span>
+       <div>
+        <strong>
+         CONFIGURE YOUR KEYS
+        </strong>
+        <p>
+         Add your Groq key; choose local Qdrant or configure Qdrant Cloud.
+        </p>
+       </div>
+      </div>
+      <div class="setup-step">
+       <span>
+        04
+       </span>
+       <div>
+        <strong>
+         START RESEARCHING
+        </strong>
+        <p>
+         Run the Flask app and open localhost:5000.
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="terminal">
+      <div class="terminal-bar">
+       <span>
+        QUICK START / WINDOWS POWERSHELL
+       </span>
+       <button class="copy-btn" id="copyCommands" type="button">
+        COPY COMMANDS ⧉
+       </button>
+      </div>
+      <pre id="commands">git clone https://github.com/kartiktomar03/Research-Paper-Assistant.git
+cd Research-Paper-Assistant
+py -3.11 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+# Create .env with GROQ_API_KEY
+python app.py</pre>
+      <div class="terminal-note">
+       → Open
+       <strong>
+        http://127.0.0.1:5000
+       </strong>
+       after startup.
+      </div>
+      <div class="mode-switch">
+       <span class="mode-title">
+        VECTOR DATABASE OPTIONS
+       </span>
+       <div class="mode-grid">
+        <div>
+         <strong>
+          ◉ LOCAL MODE
+         </strong>
+         <small>
+          No Qdrant URL required. Data stored locally.
+         </small>
+        </div>
+        <div>
+         <strong>
+          ☁ CLOUD MODE
+         </strong>
+         <small>
+          Set QDRANT_URL and QDRANT_API_KEY.
+         </small>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <p class="setup-disclaimer">
+     Note: You need your own Groq API key. The app is not production hardened; do not upload sensitive documents to an untrusted public deployment.
+    </p>
+   </section>
+   <section class="section wrap limits-section">
+    <div class="limits">
+     <div>
+      <div class="kicker">
+       AN HONEST NOTE
+      </div>
+      <h2>
+       BUILT TO LEARN.
+       <br/>
+       STILL
+       <span>
+        EVOLVING.
+       </span>
+      </h2>
+     </div>
+     <div>
+      <p>
+       ResearchLab is a hands-on engineering project. Complex PDF tables and figure crops may need manual verification, scanned pages may require OCR, and AI-generated analysis should be checked against the source.
+      </p>
+      <p>
+       Free-tier cloud hosting has limited compute and temporary file storage. This page is a project showcase; run the app locally for a more reliable experience.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="cta-section">
+    <div class="wrap cta-layout">
+     <div>
+      <div class="kicker kicker-dark">
+       READY TO DIVE IN?
+      </div>
+      <h2>
+       GOOD RESEARCH
+       <br/>
+       STARTS
+       <span>
+        HERE ✳
+       </span>
+      </h2>
+     </div>
+     <div class="cta-action">
+      <p>
+       Explore the source, run it locally, and make it your own.
+      </p>
+      <a class="button button-black" href="https://github.com/kartiktomar03/Research-Paper-Assistant" rel="noopener noreferrer" target="_blank">
+       EXPLORE ON GITHUB
+       <span>
+        ↗
+       </span>
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="footer wrap">
+   <a class="footer-brand" href="#top">
+    R
+    <span>
+     ✳
+    </span>
+    RESEARCHLAB
+   </a>
+   <p>
+    AN AI-POWERED RESEARCH PAPER ASSISTANT
+   </p>
+   <div>
+    <a href="https://github.com/kartiktomar03/Research-Paper-Assistant" rel="noopener noreferrer" target="_blank">
+     GITHUB ↗
+    </a>
+    <a href="#setup">
+     GET STARTED ↑
+    </a>
+   </div>
+  </footer>
+ </body>
+</html>
+
